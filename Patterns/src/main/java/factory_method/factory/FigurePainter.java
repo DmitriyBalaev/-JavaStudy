@@ -1,6 +1,6 @@
-package factoryMethod.factory;
+package factory_method.factory;
 
-import factoryMethod.model.Shape;
+import factory_method.model.Shape;
 
 public abstract class FigurePainter {
 

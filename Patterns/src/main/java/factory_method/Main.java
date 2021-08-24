@@ -1,8 +1,8 @@
-package factoryMethod;
+package factory_method;
 
-import factoryMethod.factory.FigurePainter;
-import factoryMethod.factory.SquarePainter;
-import factoryMethod.factory.TrianglePainter;
+import factory_method.factory.FigurePainter;
+import factory_method.factory.SquarePainter;
+import factory_method.factory.TrianglePainter;
 
 import java.util.ArrayList;
 import java.util.List;

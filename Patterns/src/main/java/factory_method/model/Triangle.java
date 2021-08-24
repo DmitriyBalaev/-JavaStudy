@@ -1,4 +1,4 @@
-package factoryMethod.model;
+package factory_method.model;
 
 public class Triangle implements Shape {
     @Override

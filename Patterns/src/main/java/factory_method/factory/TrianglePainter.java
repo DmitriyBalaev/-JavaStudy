@@ -1,7 +1,7 @@
-package factoryMethod.factory;
+package factory_method.factory;
 
-import factoryMethod.model.Shape;
-import factoryMethod.model.Triangle;
+import factory_method.model.Shape;
+import factory_method.model.Triangle;
 
 public class TrianglePainter extends FigurePainter {
     @Override

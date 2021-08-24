@@ -1,7 +1,7 @@
-package factoryMethod.factory;
+package factory_method.factory;
 
-import factoryMethod.model.Shape;
-import factoryMethod.model.Square;
+import factory_method.model.Shape;
+import factory_method.model.Square;
 
 public class SquarePainter extends FigurePainter {
     @Override
