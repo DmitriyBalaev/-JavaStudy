@@ -1,4 +1,4 @@
-#Comparable и Comparator
+# Comparable и Comparator
 
 ----
 ----
@@ -59,7 +59,7 @@
                 .toList();
 
 
-###Comparator.reversed и Comparator.reverseOrder()
+### Comparator.reversed и Comparator.reverseOrder()
 
 Методы используется что бы поменять сортировку в порядке убывания
 
@@ -74,7 +74,7 @@
                 .toList();
 Comparator.reverseOrder() выдает исключение NullPointerException  при сравнении с нулевым значением.
 
-###Comparator.thenComparing
+### Comparator.thenComparing
 
 Если значения по которому мы сортируем одинаковы, то мы можем добавить еще варианты сортировки 
 применимые к одинаковым элементам.
