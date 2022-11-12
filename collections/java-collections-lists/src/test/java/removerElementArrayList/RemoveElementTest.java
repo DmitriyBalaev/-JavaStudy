@@ -1,23 +1,21 @@
 package removerElementArrayList;
 
-
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
+import static org.assertj.core.api.Assertions.*;
 
 
 public class RemoveElementTest {
     List<String> sports = new ArrayList<>();
 
-    @Before
+    @BeforeEach
     public void init(){
         sports.add("Football");
         sports.add("Basketball");
@@ -30,16 +28,17 @@ public class RemoveElementTest {
     public void removeElementByIndex(){
         sports.remove(1);//remove "basketball"
 
-        assertEquals(4, sports.size());
-        assertNotEquals(sports.get(1), "Basketball");
+        assertThat(sports.size()).isEqualTo(4);
+        assertThat(sports.get(1)).isNotEqualTo("Basketball");
     }
 
     @Test
     public void removeByElement(){
         sports.remove("Baseball");
 
-        assertEquals(4, sports.size());
-        assertFalse(sports.contains("Baseball"));
+        assertThat(sports.size()).isEqualTo(4);
+        assertThat(sports).doesNotContain("Baseball");
+
     }
 
     @Test
@@ -50,17 +49,16 @@ public class RemoveElementTest {
                 iterator.remove();
             }
         }
-
-        assertEquals(4, sports.size());
-        assertFalse(sports.contains("Boxing"));
+        assertThat(sports.size()).isEqualTo(4);
+        assertThat(sports).doesNotContain("Boxing");
     }
 
     @Test
     public void removeWithRemoveIf(){
         sports.removeIf(p -> p.equals("Cycling"));
 
-        assertEquals(4, sports.size());
-        assertFalse(sports.contains("Cycling"));
+        assertThat(sports.size()).isEqualTo(4);
+        assertThat(sports).doesNotContain("Cycling");
     }
 
 }
