@@ -1,4 +1,4 @@
-package saxParser;
+package model;
 
 import java.math.BigDecimal;
 

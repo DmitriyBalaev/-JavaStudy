@@ -1,6 +1,6 @@
 package staxParser;
 
-import saxParser.Currency;
+import model.Currency;
 
 import javax.xml.stream.XMLStreamException;
 import java.io.FileNotFoundException;
